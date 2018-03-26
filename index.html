@@ -1,108 +1,57 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <style>
-        body, html {
-            height: 100%;
-            margin: 0;
-        }
+<style>
+    body, html {
+        height: 100%;
+        margin: 0;
+    }
 
-        .bgimg {
-            background-image: url('./img/openBook.jpeg');
-            height: 100%;
-            background-position: center;
-            background-size: cover;
-            position: relative;
-            color: white;
-            font-family: Verdana, Geneva, sans-serif;
-            font-size: 25px;
-        }
+    .bgimg {
+        background-image: url('gotcha.jpg');
+        height: 100%;
+        background-position: center;
+        background-size: cover;
+        position: relative;
+        color: white;
+        font-family: "Courier New", Courier, monospace;
+        font-size: 25px;
+    }
 
-        .topleft {
-            position: absolute;
-            top: 0;
-            left: 16px;
-        }
+    .topleft {
+        position: absolute;
+        top: 0;
+        left: 16px;
+    }
 
-        .bottomleft {
-            position: absolute;
-            bottom: 20%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
+    .bottomleft {
+        position: absolute;
+        bottom: 20%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
 
-        .middle {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            text-align: center;
-            width: 100%;
-            padding-bottom: 35px;
-            background-color: rgba(0,0,0, .4);
-        }
+    .middle {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
 
-        hr {
-            margin: auto;
-            width: 40%;
-        }
-
-        .button {
-            background-color: #008CBA; /* Green */
-            border: none;
-            color: white;
-            padding: 15px 32px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-            border-radius: 4px;
-            margin: 5px;
-        }
-    </style>
-    <script type="text/javascript">
-        function tr() {
-            var subtitleControl = document.getElementById("subtitle");
-            var button1Control = document.getElementById("button1");
-            var button2Control = document.getElementById("button2");
-
-            var subtitleText;
-            var button1Text;
-            var button2Text;
-
-            if (button1Control.textContent === "View Resume") {
-                var subtitleText = "Servicios de Instrucción y Traducción Ingles";
-                var button1Text = "Ver curriculum vitae";
-                var button2Text = "Change to English";
-            }
-            else {
-                var subtitleText = "English Instruction and Translation Services";
-                var button1Text = "View Resume";
-                var button2Text = "Cambiar a Español";
-            }
-
-            subtitleControl.textContent = subtitleText;
-            button1Control.textContent = button1Text;
-            button2Control.textContent = button2Text;
-        }
-
-    </script>
-</head>
+    hr {
+        margin: auto;
+        width: 40%;
+    }
+</style>
 <body>
 
     <div class="bgimg">
         <div class="middle">
-            <h1>Caterine Asselborn</h1>
+            <h1>KERMING SOON</h1>
             <hr>
-            <h3 id="subtitle">English Instruction and Translation Services</h3>
-            <form style="display: inline" action="https://docs.google.com/document/d/17-fkiFO9PaoXF8W27Qem7QLiltRBNCS0pRVMDRAcZ1c/edit?usp=sharing" method="get">
-                <button id="button1" class="button" onclick="">View Resume</button>
-            </form>
-            <button id="button2" class="button" type="button" onclick="tr(); return false;">Cambiar a Español</button>
         </div>
+        <p class="bottomleft">Broke ya neck, son.</p>
     </div>
-
-
 
 </body>
 </html>
